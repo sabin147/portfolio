@@ -87,12 +87,12 @@ export const projects = [
     desc: 'Full-stack restaurant prototype featuring role-based auth, ordering, subscription, and reservation systems. Built with C# and ASP.NET Web API backend, Vue.js + Bootstrap frontend. Selected as the foundation for my final dissertation.',
     tags: ['C#', 'ASP.NET', 'SQL Server', 'JWT', 'Vue.js'],
     link: '#',
-    featured: true,
+    featured: false,
     year: '2024',
   },
   {
     number: '02',
-    category: 'IoT · Transit',
+    category: 'IoT · Transit · RUC',
     name: 'Rejseplanen Trip Visualizer',
     desc: 'Physical prototype that renders real-time Danish transit progress on an LED strip. ESP32 communicates via MQTT; data fetched from the Rejseplanen API and visualized with p5.js.',
     tags: ['ESP32', 'p5.js', 'MQTT', 'REST API'],
@@ -102,7 +102,7 @@ export const projects = [
   },
   {
     number: '03',
-    category: 'AI · Mobile',
+    category: 'AI · Mobile · RUC',
     name: 'Smart Waste Sorter',
     desc: 'Cross-platform mobile app that classifies waste from camera images using GPT-4o vision. React Native frontend, Node.js backend, SQLite local storage.',
     tags: ['React Native', 'Node.js', 'GPT-4o', 'SQLite'],
@@ -112,7 +112,7 @@ export const projects = [
   },
   {
     number: '04',
-    category: 'Algorithms · Theory',
+    category: 'Algorithms · Theory · RUC',
     name: 'Mathematical Analysis and Development of an Algorithm for the Pre-Marshalling Problem',
     desc: 'Interactive visualization of the Pre-Marshalling Problem (NP-hard). Implements a BFS-based solver with complexity analysis and step-through mode.',
     tags: ['BFS', 'NP-hard', 'Complexity Theory', 'Visualization'],
@@ -150,17 +150,26 @@ export const projects = [
   featured: false,
   year: '2026',
 },
-// Add this BEFORE existing projects
 {
   number: '08',
-  name: 'Nepali Imposter',
-  category: 'Social Deduction Game',
-  featured: true,  // This makes it span full width
-  desc: 'A fun, interactive social deduction word game (like Mafia/Werewolf) where players describe Nepali words while one Imposter bluffs without knowing the word. Built with React + Vite, featuring category-based gameplay, real-time voting, and beautiful Nepali UI.',
+  category: 'Game Development · React · Vite',
+  name: 'Nepali Imposter - Vibe Coded',
+  desc: '🎭 A fun social deduction word game (like Mafia/Werewolf) where players describe Nepali words while one random Imposter bluffs without knowing the word. Built with React + Vite + Tailwind CSS, featuring category-based gameplay, real-time voting, beautiful Nepali UI, and engaging game mechanics. Perfect blend of language learning and strategic party gaming.',
+  tags: ['React', 'Vite', 'Tailwind CSS', 'Game Logic', 'Nepali Language'],
   link: 'https://imposter-nepali-game.vercel.app',
-  github: 'https://github.com/sabin147/imposter-NepaliGame',
-  tags: ['React', 'Vite', 'Tailwind CSS', 'Game Design', 'Nepali Language'],
-  vibe: '🎭 VIBE CODED',  // Add this to show it\'s a personal project
+  featured: false,
+  year: '2026',
+},
+{
+  number: '09',
+  category: 'Web Design · Vibe Coded',
+  name: 'Personal Portfolio',
+  desc: '✨ My digital space — a beautifully designed portfolio site showcasing my projects, skills, and journey. ',
+  tags: ['React', 'Vite', 'Framer Motion', 'CSS', 'Web Design'],
+  link: 'https://sabinghimire.dev',  // ← Change to your portfolio URL
+  github: 'https://github.com/sabin147/portfolio',
+  featured: false,
+  year: '2026',
 },
   // ── ADD YOUR NEXT PROJECT HERE ──────────────────────────────
   // {
