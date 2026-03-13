@@ -18,10 +18,10 @@ export default function App() {
         <Section id="skills" index="02" label="Technical Stack I've Worked With through projects and coursework - always adding more!">
           <Skills />
         </Section>
-        <Section id="experience" index="03" label="Experience">
+        <Section id="experience" index="04" label="Experience">
           <Experience />
         </Section>
-        <Section id="projects" index="04" label="Projects">
+        <Section id="projects" index="03" label="Projects">
           <Projects />
         </Section>
         <Section id="education" index="05" label="Education & Languages">
