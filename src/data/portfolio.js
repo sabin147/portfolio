@@ -3,6 +3,8 @@
 //  After editing, run: git add . && git commit -m "update" && git push
 // ============================================================
 
+import { link } from "framer-motion/client";
+
 export const meta = {
   name: 'Sabin Ghimire',
   role: 'CS & Mathematics Student @ Roskilde University',
@@ -111,13 +113,55 @@ export const projects = [
   {
     number: '04',
     category: 'Algorithms · Theory',
-    name: 'Pre-Marshalling Visualizer',
+    name: 'Mathematical Analysis and Development of an Algorithm for the Pre-Marshalling Problem',
     desc: 'Interactive visualization of the Pre-Marshalling Problem (NP-hard). Implements a BFS-based solver with complexity analysis and step-through mode.',
     tags: ['BFS', 'NP-hard', 'Complexity Theory', 'Visualization'],
     link: '#',
     featured: false,
     year: '2022',
   },
+  {
+  number: '05',
+  category: 'Academic Report · RUC 2025',
+  name: 'Is Technological Singularity Happening?',
+  desc: 'Group research report analyzing the feasibility of the Technological Singularity. Examines proponents (Kurzweil, Vinge, Good) against critics (Modis, Cochrane) through exponential vs. logistic growth models, complexity theory, and science studies methodology. Conclusion: singularity is far less likely than commonly claimed.',
+  tags: ['Research', 'AI Theory', 'Complexity Theory', 'Roskilde University'],
+  link: '#',   // ← replace '#' with your PDF link once uploaded
+  featured: false,
+  year: '2025',
+},
+{
+  number: '06',
+  category: 'Statistical Analysis · RUC 2025',
+  name: 'COVID Treatment & Age — Statistical Modelling',
+  desc: 'Mini project analysing survival outcomes of COVID patients treated with hydroxychloroquine vs. standard treatment across age groups. Applied logistic regression, chi-square tests, and Simpson\'s Paradox analysis using Python (pandas, matplotlib).',
+  tags: ['Python', 'Statistics', 'Logistic Regression', 'pandas'],
+  link: '#',  // ← replace with GitHub repo link once created
+  featured: false,
+  year: '2025',
+},
+{
+  number: '07',
+  category: 'Math · Ongoing · RUC 2026',
+  name: 'Learning in Adaptive Oscillator Networks',
+  desc: 'Implementing OCR via synchronization in Kuramoto-type phase oscillator networks — a biologically inspired alternative to backpropagation. Models neuronal learning through coupled oscillator dynamics, Hebbian weight rules, and phase-locking. Bridges nonlinear dynamics, statistical physics, and machine learning.',
+  tags: ['Python', 'Kuramoto Model', 'Nonlinear Dynamics', 'Neural Networks', 'Applied Math'],
+  link: 'https://github.com/sabin147/adaptive-oscillator-ocr',  // ← replace with GitHub repo once you have code to share
+  featured: false,
+  year: '2026',
+},
+// Add this BEFORE existing projects
+{
+  number: '08',
+  name: 'Nepali Imposter',
+  category: 'Social Deduction Game',
+  featured: true,  // This makes it span full width
+  desc: 'A fun, interactive social deduction word game (like Mafia/Werewolf) where players describe Nepali words while one Imposter bluffs without knowing the word. Built with React + Vite, featuring category-based gameplay, real-time voting, and beautiful Nepali UI.',
+  link: 'https://imposter-nepali-game.vercel.app',
+  github: 'https://github.com/sabin147/imposter-NepaliGame',
+  tags: ['React', 'Vite', 'Tailwind CSS', 'Game Design', 'Nepali Language'],
+  vibe: '🎭 VIBE CODED',  // Add this to show it\'s a personal project
+},
   // ── ADD YOUR NEXT PROJECT HERE ──────────────────────────────
   // {
   //   number: '05',
@@ -137,6 +181,7 @@ export const education = [
     degree: 'International Bachelor in Natural Science',
     field: 'Mathematics + Computer Science',
     school: 'Roskilde University',
+    link: 'https://ruc.dk/en',
     dates: 'Sep 2024 — 2027',
     current: true,
   },
@@ -144,6 +189,7 @@ export const education = [
     degree: 'AP Degree in Computer Science',
     field: 'Computer Science',
     school: 'Zealand Academy of Technologies and Business',
+    link: 'https://zealand.com/',
     dates: 'Sep 2021 — Jan 2024',
     current: false,
   },
