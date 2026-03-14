@@ -65,19 +65,51 @@ function ProjectCard({ p, i, featured }) {
             </div>
           </div>
 
-          {/* Arrow */}
-          <div style={{
-            width: 44, height: 44,
-            border: `1px solid ${hovered ? 'rgba(235,235,232,0.25)' : 'var(--border)'}`,
-            display: 'flex', alignItems: 'center', justifyContent: 'center',
-            fontSize: 18,
-            color: hovered ? 'var(--bg)' : 'var(--fg)',
-            transform: hovered ? 'translate(4px,-4px)' : 'translate(0,0)',
-            transition: 'transform 0.4s cubic-bezier(0.16,1,0.3,1), color 0.3s, border-color 0.3s',
-            flexShrink: 0,
-          }}>
-            ↗
-          </div>
+          {/* Links */}
+<div style={{
+  display: 'flex', gap: 12, alignItems: 'center',
+}}>
+  {p.links ? (
+    p.links.map(link => (
+      <a
+        key={link.label}
+        href={link.url}
+        target="_blank"
+        rel="noreferrer"
+        style={{
+          padding: '6px 12px',
+          fontSize: 10,
+          fontWeight: 700,
+          letterSpacing: '0.1em',
+          textTransform: 'uppercase',
+          border: `1px solid ${hovered ? 'rgba(235,235,232,0.25)' : 'var(--border)'}`,
+          color: hovered ? 'var(--bg)' : 'var(--fg)',
+          textDecoration: 'none',
+          transition: 'all 0.3s',
+        }}
+        onMouseEnter={e => {
+          e.currentTarget.style.background = hovered ? 'var(--bg)' : 'transparent';
+        }}
+        onMouseLeave={e => {
+          e.currentTarget.style.background = 'transparent';
+        }}
+      >
+        {link.label}
+      </a>
+    ))
+  ) : (
+    <div style={{
+      width: 44, height: 44,
+      border: `1px solid ${hovered ? 'rgba(235,235,232,0.25)' : 'var(--border)'}`,
+      display: 'flex', alignItems: 'center', justifyContent: 'center',
+      fontSize: 18,
+      color: hovered ? 'var(--bg)' : 'var(--fg)',
+      transform: hovered ? 'translate(4px,-4px)' : 'translate(0,0)',
+    }}>
+      →
+    </div>
+  )}
+</div>
         </div>
 
         {/* Description */}

@@ -142,18 +142,20 @@ export function Contact() {
         animate={inView ? { opacity: 1, y: 0 } : {}}
         transition={{ duration: 0.8, ease: EASE, delay: 0.3 }}
         style={{
-          display: 'grid', gridTemplateColumns: '1fr 1fr 1fr',
+          display: 'grid', gridTemplateColumns: '1fr 1fr 1fr 1fr',
           gap: 0, border: '1px solid var(--border)',
         }}
       >
         {[
           { label: 'Email', value: meta.email, href: `mailto:${meta.email}` },
           { label: 'LinkedIn', value: 'sabin-ghimire', href: meta.linkedin },
+          { label: 'GitHub', value: 'sabin147', href: meta.github },
           { label: 'Location', value: meta.location, href: null },
+      
         ].map((item, i) => (
           <div key={item.label} style={{
             padding: '36px 32px',
-            borderRight: i < 2 ? '1px solid var(--border)' : 'none',
+            borderRight: i < 3 ? '1px solid var(--border)' : 'none',
           }}>
             <div style={{
               fontSize: 10, fontWeight: 700, letterSpacing: '0.25em',
