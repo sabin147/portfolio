@@ -58,7 +58,7 @@ export const experiences = [
     tags: ['Communication', 'Service', 'Teamwork'],
   },
   {
-    dates: 'Sep 2021 — Jan 2024',
+    dates: 'Aug 2023 — Jan 2024',
     role: 'Intern Developer',
     company: 'BeckIT',
     type: 'Internship',
@@ -66,7 +66,7 @@ export const experiences = [
     tags: ['C#', '.NET Web API', 'SQL Server', 'Vue.js', 'Bootstrap'],
   },
   {
-    dates: 'Aug 2023 — Jan 2024',
+    dates: '2018 — 2019',
     role: 'Data Entry Clerk',
     company: 'Everest Bank Ltd. / Tax Office',
     type: 'Part-time',
